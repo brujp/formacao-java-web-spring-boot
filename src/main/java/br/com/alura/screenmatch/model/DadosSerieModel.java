@@ -1,11 +1,16 @@
 package br.com.alura.screenmatch.model;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import java.util.List;
 
 //Desserializar (Converter Json para um objeto Java) o json retornado pela api OMBD (https://www.omdbapi.com)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public record DadosSerieModel(
-        @JsonAlias("Title") String tituloSerie,
-        @JsonAlias("Genre")String generoSerie,
-        @JsonAlias("Writer")String autorSerie,
-        @JsonAlias("Ratings")String avaliacaoSerie) {
+        @JsonAlias("Title") String titulo,
+        @JsonAlias("Genre")String genero,
+        @JsonAlias("Writer")String autor,
+        @JsonAlias("Ratings")List<?> avaliacao)
+    {
 }
