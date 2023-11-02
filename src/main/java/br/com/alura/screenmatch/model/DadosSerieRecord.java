@@ -11,6 +11,7 @@ public record DadosSerieRecord(
         @JsonAlias("Title") String titulo,
         @JsonAlias("Genre")String genero,
         @JsonAlias("Writer")String autor,
+        @JsonAlias("totalSeasons") Integer totalTemporadas,
         @JsonAlias("Ratings")List<?> avaliacao
 ){
 }
