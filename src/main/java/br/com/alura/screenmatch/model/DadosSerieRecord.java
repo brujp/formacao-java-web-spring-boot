@@ -7,10 +7,10 @@ import java.util.List;
 
 //Desserializar (Converter Json para um objeto Java) o json retornado pela api OMBD (https://www.omdbapi.com)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record DadosSerieModel(
+public record DadosSerieRecord(
         @JsonAlias("Title") String titulo,
         @JsonAlias("Genre")String genero,
         @JsonAlias("Writer")String autor,
-        @JsonAlias("Ratings")List<?> avaliacao)
-    {
+        @JsonAlias("Ratings")List<?> avaliacao
+){
 }
