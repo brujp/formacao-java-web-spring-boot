@@ -63,3 +63,9 @@ Isso é útil quando você está trabalhando com diferentes versões de um JSON 
 Por exemplo, se você tiver uma classe Java com a propriedade "nomeCompleto" e o JSON usa "nome" em vez disso, você pode usar o @JsonAlias("nome") para mapear corretamente a propriedade. Dessa forma, tanto "nomeCompleto" quanto "nome" serão aceitos ao fazer o mapeamento.
 
 Documentação Jackson: https://github.com/FasterXML/jackson
+
+## Generics
+
+Em Java, generics permitem criar classes, interfaces e métodos que podem trabalhar com tipos desconhecidos ou parâmetros genéricos. Eles fornecem uma forma de escrever código flexível e reutilizável, tornando-o independente de tipos específicos e permitindo que ele funcione com diferentes tipos de dados.
+
+Para criar um método ou classe genérico, você precisa usar parâmetros de tipo (tipos genéricos) que são representados entre colchetes angulares < >. Geralmente, usamos letras maiúsculas únicas para representar os tipos genéricos, mas você pode usar qualquer identificador válido em Java.
