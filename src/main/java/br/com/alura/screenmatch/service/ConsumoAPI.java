@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch;
+package br.com.alura.screenmatch.service;
 
 import java.io.IOException;
 import java.net.URI;
@@ -8,6 +8,7 @@ import java.net.http.HttpResponse;
 
 public class ConsumoAPI {
 
+    //Método responsável por fazer a requisição para uma determinada URL e retornar a resposta como uma String
     public String obterDados(String endereco) {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
