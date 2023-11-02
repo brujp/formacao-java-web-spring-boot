@@ -6,7 +6,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class ConsumoAPI {
+public class ConsumoApiService {
 
     //Método responsável por fazer a requisição para uma determinada URL e retornar a resposta como uma String
     public String obterDados(String endereco) {
